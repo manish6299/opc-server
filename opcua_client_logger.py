@@ -57,7 +57,7 @@ def discover_nodes(client, max_tags=MAX_TAGS):
             if len(nodes) == max_tags:
                 break
 
-    print(f"✅ Auto-discovered {len(nodes)} nodes:")
+    print(f" Auto-discovered {len(nodes)} nodes:")
     for i, (n, name) in enumerate(zip(nodes, names), 1):
         print(f"  Tag{i}: {name} -> {n.nodeid}")
 
@@ -107,3 +107,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
